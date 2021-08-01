@@ -77,18 +77,39 @@ def listAppendExtend():
     # what the... f..? 2D array
 
 
-def sort():
+def mySort():
     a = [11, 12, 5, 8, 9, 1,3]
     print(a)
     a.sort()
     print(a)
 
 
+def dimension():
+    a = 0   # 상수 : 스칼라
+    print(type(a))
+
+    b = [1] # 2차원 : 벡터 Vector
+    print(type(b))
+
+    c = [[2]]  # 2차원 : 매트릭스 Matrix
+    print(type(c))
+
+    d = [[[3]]]  # 3차원 : 텐서 Tensor
+    print(type(d))
+
+    myMat = [[1,2,3],
+             [4,5,6],
+             [7,8,9]]
+    print(myMat)
+    print(type(myMat))
+
+
 if __name__ == "__main__":
-    # listBasic()
-    # stringBasic()
-    # listOperation()
-    # typeStudy()
-    # shallowCopyProblem()
-    #listAppendExtend()
-    sort()
+    listBasic()
+    stringBasic()
+    listOperation()
+    typeStudy()
+    shallowCopyProblem()
+    listAppendExtend()
+    mySort()
+    dimension()
